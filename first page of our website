@@ -1,0 +1,773 @@
+RGIPT Google Apps Mail	RAKSHATH M GOWDA <22cs2010@rgipt.ac.in>
+(no subject)
+RAKSHATH M GOWDA <22cs2010@rgipt.ac.in>	Tue, Apr 16, 2024 at 5:17 PM
+To: KALPANA TIWARI <22cs2025@rgipt.ac.in>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>DreamDwellingsHub</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+* {
+margin: 0px;
+padding: 0px;
+}
+.nav {
+margin: 3vh;
+position: fixed;
+width: 100%;
+background-color: transparent;
+display: flex;
+justify-content: space-around;
+align-items: center;
+z-index: 100;
+
+flex-wrap: wrap;
+}
+.navbar {
+display: flex;
+flex-wrap: wrap;
+gap: 40px;
+}
+.navbar li {
+font-size: larger;
+font-weight: bold;
+}
+.logo {
+display: flex;
+flex-wrap: wrap;
+font-weight: bolder;
+margin-left: 50px;
+}
+.logo li:hover {
+cursor: pointer;
+}
+.navbar li:hover {
+color: red;
+cursor: pointer;
+text-shadow: 2px 2px 5px rgb(0, 0, 0);
+transform: scaleX(1.1);
+text-decoration: underline;
+transition: transform 0.3s;
+}
+.container {
+position: relative;
+width: 100%;
+height: 100vh;
+}
+.photo img {
+position: absolute;
+width: 100%;
+height: 100vh;
+}
+.photo .left-info {
+position: absolute;
+top: 0;
+left: 0;
+width: 50%;
+height: 100%;
+}
+
+.left-info .penetrate-blur {
+position: absolute;
+width: 100%;
+height: 100%;
+background-color: rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(20px);
+display: flex;
+justify-content: flex-start;
+align-items: center;
+animation-name: left;
+animation-duration: 3s;
+animation-fill-mode: forwards;
+animation-iteration-count: 1;
+animation-timing-function: ease-in-out;
+}
+.penetrate-blur h1 {
+font-size: 150px;
+text-shadow: 10px 10px 10px white;
+}
+.left-info .content {
+position: absolute;
+bottom: 8%;
+left: 10%;
+color: white;
+}
+.rigth-info {
+position: absolute;
+
+right: 0;
+top: 0;
+}
+.rigth-info {
+display: flex;
+justify-content: flex-end;
+align-items: center;
+width: 50%;
+height: 100%;
+animation-name: rigth;
+animation-duration: 3s;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
+animation-timing-function: ease-in-out;
+}
+.rigth-info h1 {
+font-size: 150px;
+color: white;
+text-shadow: 10px 10px 10px black;
+}
+@keyframes left {
+0% {
+}
+50% {
+justify-content: center;
+}
+100% {
+justify-content: flex-end;
+}
+}
+@keyframes rigth {
+0% {
+}
+50% {
+justify-content: center;
+}
+100% {
+justify-content: flex-start;
+}
+}
+.container1 {
+justify-content: center;
+display: none;
+visibility: hidden;
+}
+.container1_signup {
+justify-content: center;
+display: none;
+visibility: hidden;
+}
+
+.box1 {
+padding-top: 20px;
+padding: 2vh;
+width: 25em;
+height: 30em;
+border-radius: 50px;
+
+z-index: 1;
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+box-shadow: 20px 20px 22px rgba(0, 0, 0),
+inset 20px 20px 22px rgba(0, 0, 0);
+display: flex;
+gap: 7vh;
+flex-direction: column;
+align-items: center;
+}
+.flex {
+display: flex;
+}
+
+.box1_signup {
+padding-top: 20px;
+padding: 2vh;
+width: 25em;
+height: 32em;
+border-radius: 50px;
+
+z-index: 1;
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+box-shadow: 20px 20px 22px rgba(0, 0, 0),
+inset 20px 20px 22px rgba(0, 0, 0);
+display: flex;
+gap: 7vh;
+flex-direction: column;
+align-items: center;
+}
+
+.pos {
+position: absolute;
+bottom: 16vh;
+}
+.pos1 {
+position: absolute;
+bottom: 14vh;
+}
+
+.box2 {
+border-radius: 25px;
+position: relative;
+z-index: 1;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+#email,
+#email_signup,
+#UserName_signup {
+width: 100%;
+height: 30px;
+border: 2px solid black;
+font-size: larger;
+}
+#password,
+#password_signup {
+font-size: larger;
+width: 100%;
+height: 30px;
+border: 2px solid black;
+}
+label {
+font-size: x-large;
+}
+.button,
+.button_signup,
+.button_signupwith {
+width: 100%;
+height: 40px;
+border: 2px solid black;
+border-radius: 10px;
+background-color: black;
+color: white;
+font-size: larger;
+cursor: pointer;
+transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.button:hover,
+.button_signup:hover {
+transform: scale(1.02);
+}
+.forgoten {
+position: absolute;
+left: 15em;
+color: white;
+}
+.forgoten:hover {
+color: red;
+cursor: pointer;
+}
+.register {
+color: white;
+}
+.register:hover {
+color: red;
+cursor: pointer;
+}
+#eye {
+position: absolute;
+cursor: pointer;
+left: 21em;
+top: 14em;
+}
+#eye_signup {
+position: absolute;
+cursor: pointer;
+left: 21em;
+top: 19em;
+}
+.google {
+border-radius: balck;
+}
+.none {
+display: none;
+}
+.service {
+width: 100%;
+
+background-color: transparent;
+position: absolute;
+top: 12vh;
+}
+
+.service ul {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+.service ul li {
+font-size: medium;
+font-weight: bold;
+}
+.service ul li:hover {
+color: red;
+transform: scale(1.1);
+cursor: pointer;
+}
+
+pre {
+font-size: larger;
+font-weight: bolder;
+}
+.contact {
+width: 100%;
+
+background-color: transparent;
+position: absolute;
+top: 12vh;
+}
+.contact ul {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+.exit{
+display: flex;
+justify-content: space-around;
+width: 100%;
+height: 3vh;
+}
+
+.xmark:hover{
+transform: scale(1.3);
+}
+</style>
+</head>
+<body>
+<nav class="nav">
+<ul class="logo">
+<li type="None">
+<img
+src="home1.jpg"
+alt=""
+width="40px"
+height="40px"
+style="border-radius: 50%"
+/>
+</li>
+<li type="None" style="font-size: xx-large">DreamDwellingsHub</li>
+</ul>
+<ul class="navbar">
+<li type="None" id="services">Services</li>
+<li type="None" id="contactes">Contact</li>
+<li type="None" id="nav-login">LogIn</li>
+<li type="None" id="nav-signup">SignUp</li>
+</ul>
+</nav>
+
+<div class="container">
+<div class="photo">
+<img src="https://www.wallpapertip.com/wmimgs/54-541872_home-images-house-design-image-photos-pics-picture.jpg" alt="" />
+<div class="left-info">
+<div class="penetrate-blur">
+<h1 class="wel">WEL</h1>
+</div>
+<div class="content">
+<h3>Are You Seraching For a Home?</h3>
+<pre>
+You are at at rigth site.
+We help you to predict the price
+and find the home for your good life.
+
+For more details SignUp.....
+</pre
+>
+</div>
+</div>
+<div class="rigth-info">
+<h1 class="come">COME</h1>
+</div>
+</div>
+</div>
+
+<div class="container1">
+<div class="box1">
+<div class="exit">
+<h1>Login</h1>
+<div class="xicon">
+<i class="fa-solid fa-x fa-xl xmark" style="color: #000000;"></i>
+</div>
+</div>
+<form action="/home" method="post">
+<label for="Email">Email</label>
+<img src="email.png" alt="" width="20px" height="20px" />
+<input
+type="text"
+placeholder="Enter Your Email"
+name="email"
+id="email"
+required
+/>
+<br /><br />
+<label for="Password">Password</label>
+<img src="padlock.png" alt="" width="20px" height="20px" />
+<img src="eyeopen.png" alt="" width="20px" height="20px" id="eye" />
+<input
+type="password"
+name="password"
+id="password"
+placeholder="Password"
+required
+/>
+<br /><br />
+<input type="checkbox" name="checkbox" id="checkbox" value="sumbit" />
+<label for="checkbox" style="font-size: medium">Remaind Me</label>
+<a href="" class="forgoten">Forgot Password?</a><br /><br />
+<button class="button">Login</button>
+<br /><br />
+<p style="font-size: larger">
+Don't have an account? <a href="" class="register">Register</a>
+</p>
+</form>
+</div>
+</div>
+
+<div class="container1_signup">
+<div class="box1_signup">
+<div class="exit">
+<h1>SignUp</h1>
+<div class="xicon">
+<i class="fa-solid fa-x fa-xl xmark" style="color: #000000;"></i>
+</div>
+</div>
+<form action="/home" method="post">
+<label for="UserName">UserName</label>
+<img src="Username.png" alt="" width="20px" height="20px" />
+<input
+type="text"
+name="Username"
+id="UserName_signup"
+placeholder="Enter Your Name"
+required
+/>
+<br /><br />
+
+<label for="Email">Email</label>
+<img src="email.png" alt="" width="20px" height="20px" />
+<input
+type="text"
+placeholder="Enter Your Email"
+name="email"
+id="email_signup"
+required
+/>
+<br /><br />
+<label for="Password">Password</label>
+<img src="padlock.png" alt="" width="20px" height="20px" />
+<img
+src="eyeopen.png"
+alt=""
+width="20px"
+height="20px"
+id="eye_signup"
+/>
+<input
+type="password"
+name="password"
+id="password_signup"
+placeholder="Password"
+required
+/>
+<br /><br />
+<input
+type="checkbox"
+name="terms"
+id="terms_signup"
+value="submit"
+/>
+<label for="terms" style="font-size: medium"
+>Terms And Conditions</label
+><br /><br />
+<input
+type="checkbox"
+name="checkbox"
+id="checkbox_signup"
+value="submit"
+/>
+<label for="checkbox" style="font-size: medium">Remaind Me</label
+><br /><br />
+<button class="button_signup">SignUp</button><br><br>
+<a href="https://gmail.com" class="google" target="_blank">
+<button class="button_signupwith">
+<img
+src="google.jpeg"
+alt=""
+height="25px"
+style="border-radius: 50%"
+/>
+Signup With Google
+</button></a
+>
+<br /><br />
+</form>
+</div>
+</div>
+
+<div class="service none">
+<ul>
+<li type="none" class="serviceli">Property Listings</li>
+<li type="none" class="serviceli">Real Estate Agents Directory</li>
+<li type="none" class="serviceli">Virtual Tours</li>
+<li type="none" class="serviceli">Market Analysis</li>
+<li type="none" class="serviceli">Property Valuation</li>
+<li type="none" class="serviceli">Legal Assistance</li>
+<li type="none" class="serviceli">Home Inspection Services</li>
+<li type="none" class="serviceli">Customer Support</li>
+</ul>
+<br /><br />
+<pre class="property_listings none">
+We offer a platform for property owners to list their properties for sale or rent, and for buyers to browse available listings.
+Include advanced search filters such as location, price range, property type, and amenities.
+</pre
+>
+<pre class="real_estate_agents_directory none">
+We create a directory of real estate agents who specialize in different areas or property types.
+Allow users to search for agents based on location, expertise, and reviews from past clients.
+</pre
+>
+<pre class="virtual_tours none">
+Provide virtual tours or 3D walkthroughs of properties to give potential buyers a realistic sense of the space, especially useful
+for remote or out-of-town buyers.
+</pre
+>
+<pre class="market_analysis none">
+Offer market analysis reports and insights to help sellers understand the current value of their properties and make informed
+decisions about pricing.
+</pre
+>
+<pre class="property_valuation none">
+Allow property owners to request a free valuation of their property to better understand its market worth.
+</pre
+>
+<pre class="legal_assistance none">
+Provide access to legal resources and assistance for buyers and sellers navigating the complex process of buying or selling a
+property, including contract review and negotiation.
+</pre
+>
+<pre class="home_inspection_services none">
+Connect users with reputable home inspectors who can assess the condition of a property and identify any potential issues before
+purchase.
+</pre
+>
+<pre class="customer_support none">
+Offer responsive customer support through various channels such as phone, email, or live chat to assist users with any questions
+or concerns they may have.
+</pre
+>
+</div>
+
+<div class="contact none">
+<ul>
+<li class="li" type="none">
+<a href="https://www.instagram.com" target="_blank"
+><img
+src="instagram.jpeg"
+alt=""
+style="border-radius: 50%"
+width="40px"
+/></a>
+</li>
+<li class="li" type="none">
+<a href="https://www.facebook.com" target="_blank"
+><img
+src="facebook.jpeg"
+alt=""
+style="border-radius: 50%"
+width="40px"
+/></a>
+</li>
+<li class="li" type="none">
+<a href="https://www.twitter.com" target="_blank"
+><img
+src="twitter.jpeg"
+alt=""
+style="border-radius: 50%"
+width="40px"
+/></a>
+</li>
+<li class="li" type="none">
+<img
+src="whatsapp.jpeg"
+alt=""
+style="border-radius: 50%"
+width="40px"
+/>+91-7891310803
+</li>
+<li class="li" type="none">
+<img
+src="phone.jpeg"
+alt=""
+style="border-radius: 50%"
+width="40px"
+/>+91-7891310803
+</li>
+</ul>
+</div>
+
+<script>
+let login = document.getElementById("nav-login");
+let signup = document.getElementById("nav-signup");
+let container1 = document.getElementsByClassName("container1")[0];
+let container2 = document.getElementsByClassName("container1_signup")[0];
+let box = document.getElementsByClassName("box1")[0];
+let box1 = document.getElementsByClassName("box1_signup")[0];
+let wel = document.getElementsByClassName("wel")[0];
+let come = document.getElementsByClassName("come")[0];
+let email_signup = document.getElementById("email_signup");
+login.onclick = () => {
+container1.classList.toggle("flex");
+container1.style.visibility = "visible";
+box.classList.add("pos");
+wel.style.display = "none";
+come.style.display = "none";
+};
+let eye = document.getElementById("eye");
+let password = document.getElementById("password");
+eye.onclick = function () {
+if (password.type == "password") {
+password.type = "text";
+eye.src = "eyeclose.png";
+} else {
+password.type = "password";
+eye.src = "eyeopen.png";
+}
+};
+signup.onclick = () => {
+container2.classList.toggle("flex");
+container2.style.visibility = "visible";
+box1.classList.add("pos1");
+wel.style.display = "none";
+come.style.display = "none";
+};
+let eye_signup = document.getElementById("eye_signup");
+let password_signup = document.getElementById("password_signup");
+eye_signup.onclick = function () {
+if (password_signup.type == "password") {
+password_signup.type = "text";
+eye_signup.src = "eyeclose.png";
+} else {
+password_signup.type = "password";
+eye_signup.src = "eyeopen.png";
+}
+};
+
+let google = document.getElementsByClassName("google")[0];
+google.onclick = () => {
+document.getElementById("UserName_signup").removeAttribute("required");
+password_signup.removeAttribute("required");
+email_signup.removeAttribute("required");
+};
+
+let service = document.getElementById("services");
+let service1 = document.getElementsByClassName("service")[0];
+service.onclick = () => {
+service1.classList.toggle("none");
+};
+
+let serviceli0 = document.getElementsByClassName("serviceli")[0];
+
+serviceli0.addEventListener("mouseover", () => {
+document
+.getElementsByClassName("property_listings")[0]
+.classList.remove("none");
+});
+serviceli0.addEventListener("mouseout", () => {
+document
+.getElementsByClassName("property_listings")[0]
+.classList.add("none");
+});
+
+let serviceli1 = document.getElementsByClassName("serviceli")[1];
+
+serviceli1.addEventListener("mouseover", () => {
+document
+.getElementsByClassName("real_estate_agents_directory")[0]
+.classList.remove("none");
+});
+serviceli1.addEventListener("mouseout", () => {
+document
+.getElementsByClassName("real_estate_agents_directory")[0]
+.classList.add("none");
+});
+
+let serviceli2 = document.getElementsByClassName("serviceli")[2];
+
+serviceli2.addEventListener("mouseover", () => {
+document
+.getElementsByClassName("virtual_tours")[0]
+.classList.remove("none");
+});
+serviceli2.addEventListener("mouseout", () => {
+document
+.getElementsByClassName("virtual_tours")[0]
+.classList.add("none");
+});
+
+let serviceli3 = document.getElementsByClassName("serviceli")[3];
+
+serviceli3.addEventListener("mouseover", () => {
+document
+.getElementsByClassName("market_analysis")[0]
+.classList.remove("none");
+});
+serviceli3.addEventListener("mouseout", () => {
+document
+.getElementsByClassName("market_analysis")[0]
+.classList.add("none");
+});
+
+let serviceli4 = document.getElementsByClassName("serviceli")[4];
+
+serviceli4.addEventListener("mouseover", () => {
+document
+.getElementsByClassName("property_valuation")[0]
+.classList.remove("none");
+});
+serviceli4.addEventListener("mouseout", () => {
+document
+.getElementsByClassName("property_valuation")[0]
+.classList.add("none");
+});
+
+let serviceli5 = document.getElementsByClassName("serviceli")[5];
+
+serviceli5.addEventListener("mouseover", () => {
+document
+.getElementsByClassName("legal_assistance")[0]
+.classList.remove("none");
+});
+serviceli5.addEventListener("mouseout", () => {
+document
+.getElementsByClassName("legal_assistance")[0]
+.classList.add("none");
+});
+
+let serviceli6 = document.getElementsByClassName("serviceli")[6];
+
+serviceli6.addEventListener("mouseover", () => {
+document
+.getElementsByClassName("home_inspection_services")[0]
+.classList.remove("none");
+});
+serviceli6.addEventListener("mouseout", () => {
+document
+.getElementsByClassName("home_inspection_services")[0]
+.classList.add("none");
+});
+
+let serviceli7 = document.getElementsByClassName("serviceli")[7];
+
+serviceli7.addEventListener("mouseover", () => {
+document
+.getElementsByClassName("customer_support")[0]
+.classList.remove("none");
+});
+serviceli7.addEventListener("mouseout", () => {
+document
+.getElementsByClassName("customer_support")[0]
+.classList.add("none");
+});
+
+let contact = document.getElementById("contactes");
+let contact1 = document.getElementsByClassName("contact")[0];
+contact.onclick = () => {
+contact1.classList.toggle("none");
+};
+</script>
+</body>
+</html>
