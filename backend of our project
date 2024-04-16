@@ -1,0 +1,37 @@
+import express from "express";
+import body_parser from "body-parser";
+
+const app=express();
+app.use(body_parser.urlencoded({extended:true}))
+
+app.use(express.static("/Users/rakshathmgowda/Desktop/web dev project/photos"))
+
+app.get("/",(req,res)=>{
+res.sendFile("/Users/rakshathmgowda/Desktop/web dev project/parallel31.html")
+})
+
+
+app.post("/home",(req,res)=>{
+res.sendFile("/Users/rakshathmgowda/Desktop/web dev project/2nd page.html")
+console.log(req.body)
+})
+app.post("/info",(req,res)=>{
+console.log(req.body)
+if(req.body.user=="rent"){
+res.sendFile("/Users/rakshathmgowda/Desktop/web dev project/3rd.rent.html")
+}
+else if(req.body.user=="buy"){
+res.sendFile("/Users/rakshathmgowda/Desktop/web dev project/3rd.buy.html")
+}
+else{
+res.sendFile("/Users/rakshathmgowda/Desktop/web dev project/3rd.seller.html")
+}
+})
+
+app.post("/search",(req,res)=>{
+console.log(req.body)
+})
+
+app.listen(4000,()=>{
+console.log("i am in portal 4000")
+})
